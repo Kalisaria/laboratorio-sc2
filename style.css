@@ -1,0 +1,50 @@
+body{
+    font-family: Arial;
+    background-color: rgba(36,41,51,255);
+}
+fieldset{
+    width: 280px;
+    margin: 0 auto;
+    border: none;
+    padding: 0 0 10px 0;
+    background-color: rgba(47,54,68,255);
+    border-color:white;
+}
+form{
+    background-color: rgba(47,54,68,255);
+    width: 280px;
+    padding: 40px 25px 0 25px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid rgba(55,61,80,255);
+
+}
+
+
+input{
+    display: block;
+    border: none;
+    margin: 20px auto;
+    width: 280px;
+    background-color: #eaeaea;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+}
+legend{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(209, 230, 229);
+}
+p{ 
+    color: rgba(97,106,131,255);
+}
+
+input[type="submit"]{
+    background-color: rgba(108,99,255,255);
+    color: white;
+    cursor: pointer;
+}

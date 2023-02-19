@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang=”es”>
+
 <head>
- <meta charset="UTF-8">
- <link rel="stylesheet" type="text/CSS" href="style.css">
-</head> 
-<body> 
-<div class="form">
-    <form action="login.php" method="POST">
-        
-            <legend>Create Account</legend>
-            <br>
-       <p>Email</p>
-        <input type="email" name="G" " id="gmail" 
-        autofocus maxlength="15" required>
-    
-      <p>Nombre</p> 
-        <input type="password" name="N"  id="Nombre">
-        
-        <p>Contraseña</p>
-        <input type="email" name="C"  id="contraseña" 
-        autofocus maxlength="15" required>
-    
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/CSS" href="style.css">
+</head>
+
+<body>
+  <div class="form">
+    <form id="Form" name="Form" action="login.php" method="POST">
+
+      <legend>Create Account</legend>
+      <br>
+      <p>Nombre</p>
+      <input type="text" name="N" id="Nombre" onkeyup="validar()" onblur="validar()">
+      <div id="message" style="position: absolute; left: 10px; top: 50px; background-color: Yellow; z-index: 10" hidden>
+        Introduzca solo letras (A-Z) o (a-z). Máximo 35 caracteres.
+      </div>
+      <p>Email</p>
+      <input type="email" name="G" " id=" email" autofocus maxlength="15" required>
+
+
+
+      <p>Contraseña</p>
+      <input type="password" name="C" id="contraseña" autofocus maxlength="15" required>
+
       <p>Repetir contraseña</p>
-        <input type="password" name="RC"  id="Rcontraseña">
-    
-        <input type="submit" value="Enviar">
-    
-    
+      <input type="password" name="RC" id="Rcontraseña">
+
+      <input type="submit" value="Enviar">
+
+
     </form>
-</div>
+  </div>
 
 </body>
+
 </html>

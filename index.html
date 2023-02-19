@@ -12,23 +12,27 @@
 
       <legend>Create Account</legend>
       <br>
+
+
       <p>Nombre</p>
-      <input type="text" name="N" id="Nombre" onkeyup="validar()" onblur="validar()">
-      <div id="message" style="position: absolute; left: 10px; top: 50px; background-color: Yellow; z-index: 10" hidden>
-        Introduzca solo letras (A-Z) o (a-z). Máximo 35 caracteres.
-      </div>
+      <input type="text" name="N" id="Nombre" >
+        <div class="error-message" id="nameError"></div>
+
+
       <p>Email</p>
       <input type="email" name="G" " id=" email" autofocus maxlength="15" required>
 
 
 
       <p>Contraseña</p>
-      <input type="password" name="C" id="contraseña" autofocus maxlength="15" required>
+      <input type="password" name="C" id="contraseña" autofocus maxlength="8" required>
+
 
       <p>Repetir contraseña</p>
-      <input type="password" name="RC" id="Rcontraseña">
+      <input type="password" name="RC" id="Rcontraseña" autofocus maxlength="8" required>
 
-      <input type="submit" value="Enviar">
+
+      <input type="submit" id="button" value="Enviar">
 
 
     </form>
